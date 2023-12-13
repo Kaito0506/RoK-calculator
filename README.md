@@ -28,7 +28,7 @@ DB_PORT=
 DB_USER=
 DB_PASSWORD=
 DB_NAME=
-SESSION_SECRET=
+JWT_SECRET=
 ```
 
 - Database migration:
