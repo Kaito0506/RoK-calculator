@@ -1,5 +1,17 @@
 ## App
 
+- Install npm packages:
+
+```sh
+npm install
+```
+
+- Run app:
+
+```sh
+npm run dev
+```
+
 ## Server
 - Install npm packages:
 
@@ -38,6 +50,12 @@ If running into 'Client does not support authentication protocol' run this comma
 ```bash
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 flush privileges;
+```
+
+- Run server:
+
+```bash
+npm start
 ```
 
 ## Contributing
