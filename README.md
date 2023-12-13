@@ -7,7 +7,7 @@
 npm install
 ```
 
-- Setup .env file
+- Setup .env file:
 
 ```bash
 PORT=
@@ -19,7 +19,26 @@ DB_NAME=
 SESSION_SECRET=
 ```
 
+- Database migration:
 
+1. Create tables
+
+```bash
+npx knex migrate:latest
+```
+
+2. Drop tables
+
+```bash
+npx knex migrate:rollback
+```
+
+If running into 'Client does not support authentication protocol' run this command on MySQL
+
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+flush privileges;
+```
 
 ## Contributing
 This project would not be possible without the help from:
